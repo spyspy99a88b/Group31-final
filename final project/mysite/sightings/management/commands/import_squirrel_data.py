@@ -1,49 +1,45 @@
 #!/usr/bin/env python
-"""Django's command-line utility for administrative tasks."""
-import os
-import sys
 import csv
 from django.core.management import BaseCommand
-from sightings.models import squirrel
+from sightings.models import Squirrel
 
 class Command(BaseCommand):
-    help = 'Load a questions csv file into the database'
-
+    
     def add_arguments(self, parser):
-        parser.add_argument('--path', type=str)
-
-    def handle(self, *args, **kwargs):
-        path = kwargs['path']
-        with open(path, 'rt') as f:
-            reader = csv.reader(f, dialect='excel')
+        parser.add_argument('path')
+       
+    def handle(self,path,**options):
+        with open(path,'rt') as fp:
+            file = csv.DictReader(fp)
+            reader=list(file)
             for row in reader:
-                if row[0]!='X':
-                    data = squirrel.objects.create(                  
-                        latitude = row[1],
-                        longitude = row[0],                  
-                        USI = row[2],
-                        Shift = row[4],
-                        Date = row[5],
-                        Age = row[7],
-                        PFC = row[8],
-                        Location = row[12],
-                        SL = row[14],
-                        Running = row[15])
-                    
-#                     Chasing = 
-#                     Climbing = 
-#                     Eating = 
-#                     Foraging =  
-#                     OA = 
-#                     Kuks =   
-#                     Quaas = 
-#                     Moans =    
-#                     TF =   
-#                     TT =   
-#                     Approaches = 
-#                     Indifferent = 
-#                     Runs =    
-                    
+                s = Squirrel(                  
+                        latitude = row['Y'],
+                        longitude = row['X'],                  
+                        usi = row['Unique Squirrel ID'],
+                        shift = row['Shift'],
+                        date = row['Date'],
+                        age = row['Age'],
+                        pfc = row['Primary Fur Color'],
+                        location = row['Location'],
+                        sl = row['Specific Location'],
+                        running = True if row['Running']=='TRUE' else False,
+                        chasing = True if row['Chasing']=='TRUE' else False,
+                        climbing = True if row['Climbing']=='TRUE' else False,
+                        eating = True if row['Eating']=='TRUE' else False,
+                        foraging = True if row['Foraging']=='TRUE' else False,
+                        oa = row['Other Activities'],
+                        kuks = True if row['Kuks'].lower()=='TRUE' else False,
+                        quaas = True if row['Quaas'].lower()=='TRUE' else False,
+                        moans = True if row['Moans'].lower()=='TRUE' else False,
+                        tf = True if row['Tail flags'].lower()=='TRUE' else False,
+                        tt = True if row['Tail twitches'].lower()=='TRUE' else False,
+                        approaches = True if row['Approaches']=='TRUE' else False,
+                        indifferent = True if row['Indifferent']=='TRUE' else False,
+                        rf = True if row['Runs from'].lower()=='TRUE' else False,)
+                s.save()
+               
+
                     
                     
                 
