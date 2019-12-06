@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <table border=1 width=3000>
+      <tr>
+        <th>Update</th>
+        <th>Latitude</th>
+        <th>Longitude</th>
+        <th>Unique Squirrel ID</th>
+        <th>Shift</th>
+        <th>Date</th>
+        <th>Age</th>
+        <th>Primary Fur Color</th>
+        <th>Location</th>
+        <th>Specific Location</th>
+        <th>Running</th>
+        <th>Chasing</th>
+        <th>Climbing</th>
+        <th>Eating</th>
+        <th>Foraging</th>
+        <th>Other activities</th>
+        <th>Kuks</th>
+        <th>Quaas</th>
+        <th>Moans</th>
+        <th>Tail flags</th>
+        <th>Tail twitches</th>
+        <th>Approaches</th>
+        <th>Indifferent</th>
+        <th>Runs from</th>
+      </tr>
+      {% for sighting in sightings %}
+      <tr>
+        <td><a href="{{sighting.usi}}/">update</a></td>
+        <td>{{sighting.latitude}}</td>
+        <td>{{sighting.longitude}}</td>
+        <td>{{sighting.usi}}</td>
+        <td>{{sighting.shift}}</td>
+        <td>{{sighting.date}}</td>
+        <td>{{sighting.age}}</td>
+        <td>{{sighting.pfc}}</td>
+        <td>{{sighting.location}}</td>
+        <td>{{sighting.sl}}</td>
+        <td>{{sighting.running}}</td>
+        <td>{{sighting.chasing}}</td>
+        <td>{{sighting.climbing}}</td>
+        <td>{{sighting.eating}}</td>
+        <td>{{sighting.foraging}}</td>
+        <td>{{sighting.oa}}</td>
+        <td>{{sighting.kuks}}</td>
+        <td>{{sighting.quaas}}</td>
+        <td>{{sighting.moans}}</td>
+        <td>{{sighting.tf}}</td>
+        <td>{{sighting.tt}}</td>
+        <td>{{sighting.approaches}}</td>
+        <td>{{sighting.indifferent}}</td>
+        <td>{{sighting.rf}}</td>
+      {% endfor %}
+    </table>
+  </body>
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+
+    <p>max longitude: {{longitude_m.longitude_max}}</p>
+    <p>min latitude: {{latitude_m.latitude_min}}</p>
+    <p>latest date: {{date_m.date_max}}</p>
+	<table>
+		<tr>
+			<th>Age Counts</th>
+		</tr>
+		{% for a in age_c %}
+			<tr>	
+			{% for key,value in a.items %}
+				<td style="vertical-align:middle;">{{value}}</td>				            {% endfor %}
+			<tr/>
+		{% endfor %}
+	</table>
+	<table>
+                <tr>
+                        <th>Primary Fur Color Counts</th>
+                </tr>
+                {% for p in pfc_c %}
+                        <tr>
+                        {% for key,value in p.items %}
+                        	<td style="vertical-align:middle;">{{value}}</td>
+                        {% endfor %}
+                        <tr/>
+                {% endfor %}
+	</table>
+  </body>
+</html>
