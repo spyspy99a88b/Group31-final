@@ -5,7 +5,7 @@ class Squirrel(models.Model):
     longitude = models.DecimalField(max_digits=19,decimal_places=10)
     usi = models.CharField(max_length=200,primary_key=True)  
     shift = models.CharField(max_length=200)
-    date = models.CharField(max_length=200)
+    date = models.DateField(blank=True)
     age = models.CharField(max_length=200,blank=True)
     pfc = models.CharField(max_length=200,blank=True)
     location = models.CharField(max_length=200)

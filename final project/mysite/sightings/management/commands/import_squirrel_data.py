@@ -18,7 +18,7 @@ class Command(BaseCommand):
                         longitude = row['X'],                  
                         usi = row['Unique Squirrel ID'],
                         shift = row['Shift'],
-                        date = row['Date'],
+                        date = row['Date'][4:]+'-'+row['Date'][:2]+'-'+row['Date'][2:4],
                         age = row['Age'],
                         pfc = row['Primary Fur Color'],
                         location = row['Location'],
