@@ -13,7 +13,8 @@ This web application provides:
 	date, type = DateField	
 	latitude, type = DecimalField
 	location, type = CharField.
-4.Admin users:
+	
+#Admin users:
 	user1:spy
 	password:123456
 	user2:fugarli
@@ -26,7 +27,7 @@ This web application provides:
 	UNIs: ps3142, sl4654
     
 #Link to Application:
-    For location map visit: https://squirrel-261302.appspot.com/map/.
+    For location map visit: https://squirrel-261302.appspot.com/map/
     For list of sightings visit : https://squirrel-261302.appspot.com/sightings/
 
 #Other Information:
