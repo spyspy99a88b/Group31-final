@@ -1,0 +1,2 @@
+final project
+Django>=1.4.1
