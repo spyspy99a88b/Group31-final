@@ -12,7 +12,7 @@ This web application provides:
 	usi(Unique Squirrel ID), Primary Key
 	date, type = DateField	
 	latitude, type = DecimalField
-	location, type = CharField
+	location, type = CharField.
 4.Admin users:
 	user1:spy
 	password:123456
@@ -27,7 +27,7 @@ This web application provides:
     
 #Link to Application:
     For location map visit: https://squirrel-261302.appspot.com/map/
-    For list of sightings visit : https://squirrel-261302.appspot.com/sightings/
+    For list of sightings visit : https://squirrel-261302.appspot.com/sightings/.
 
 #Other Information:
 For convenience, the database file was copied to the root of the repo from "/final project/mysite." 
