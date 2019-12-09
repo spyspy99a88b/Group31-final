@@ -26,8 +26,8 @@ This web application provides:
 	UNIs: ps3142, sl4654
     
 #Link to Application:
-    For location map visit: https://squirrel-261302.appspot.com/map/
-    For list of sightings visit : https://squirrel-261302.appspot.com/sightings/.
+    For location map visit: https://squirrel-261302.appspot.com/map/.
+    For list of sightings visit : https://squirrel-261302.appspot.com/sightings/
 
 #Other Information:
 For convenience, the database file was copied to the root of the repo from "/final project/mysite." 
