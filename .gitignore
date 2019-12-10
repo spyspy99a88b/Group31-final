@@ -2,5 +2,4 @@
 .DS_Store
 
 #Ignore pycache
-
-_pycache_/
+__pycache__/
