@@ -14,13 +14,7 @@ This web application provides:
 	date, type = DateField<br/>    	
 	latitude, type = DecimalField  
 	location, type = CharField  
-	
-#### Admin users:  
-user1:spy  
-password:123456  
-user2:fugarli  
-password:123456  
-
+ 
 #### Group Name and Section:  
 Project Group 31, Section 002
 
@@ -30,10 +24,5 @@ UNIs: ps3142, sl4654
 #### Link to Application:  
 For location map visit: https://squirrel-261302.appspot.com/map/  
 For list of sightings visit : https://squirrel-261302.appspot.com/sightings/
-
-### Side Notes For Graders:  
-1. We are sorry for the millions of ++s and --s in the summary page because we mistakenly included pycache files in early commits. We have shown the commit history to Professor on Saturday and he said this was fine.
-2. Our app folder locates in the deeper diretory "final project/", not at the root. Sorry for any inconvinence. Also, as required in the specs, we have also copied the database file to the root of the repo just in case.
-Thank you!
 
 
