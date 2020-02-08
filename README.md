@@ -20,9 +20,4 @@ Project Group 31, Section 002
 
 #### Team Member UNIs:  
 UNIs: ps3142, sl4654
-    
-#### Link to Application:  
-For location map visit: https://squirrel-261302.appspot.com/map/  
-For list of sightings visit : https://squirrel-261302.appspot.com/sightings/
-
 
