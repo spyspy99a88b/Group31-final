@@ -2,8 +2,9 @@
 
 #### Description:
 This web application provides: 
-1. An OSM-based map of the squirrels' sighting locations in Central Park. 
-2. A visualization of the squirrel sighting database which allows users to update or add sightings, and can print a summary of important stats. 
+1. An OSM-based map of the squirrels' locations in Central Park. 
+2. A visualization of the squirrel sighting database which allows users to update or add sightings, and can print a summary of important stats.
+3. A Dajango and Bootstrap based web-design.
 
 #### Notes:
 1. The sighting map displays exactly 100 sightings.
@@ -13,7 +14,8 @@ This web application provides:
 	usi(Unique Squirrel ID), Primary Key  
 	date, type = DateField<br/>    	
 	latitude, type = DecimalField  
-	location, type = CharField  
+	location, type = CharField 
+4. Data from "2018 Central Park Squirrel Census - Squirrel Data" on NYC Open Data.
  
 #### Group Name and Section:  
 Project Group 31, Section 002
