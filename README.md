@@ -4,7 +4,7 @@
 This web application provides: 
 1. An OSM-based map of the squirrels' locations in Central Park. 
 2. A visualization of the squirrel sighting database which allows users to update or add sightings, and can print a summary of important stats.
-3. A Dajango and Bootstrap based web-design.
+3. A Django and Bootstrap based web-design.
 
 #### Notes:
 1. The sighting map displays exactly 100 sightings.
