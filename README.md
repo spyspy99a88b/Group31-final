@@ -17,9 +17,4 @@ This web application provides:
 	location, type = CharField 
 4. Data from "2018 Central Park Squirrel Census - Squirrel Data" on NYC Open Data.
  
-#### Group Name and Section:  
-Project Group 31, Section 002
-
-#### Team Member UNIs:  
-UNIs: ps3142, sl4654
 
